@@ -3,7 +3,7 @@ package CursoDevSuperior;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class exercicioEstruturaSequencial {
+public class Exemplo1Sequencial {
 	
 	public static void main(String[] args[]) {
 		
