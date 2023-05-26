@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ProblemaRetangulo {
 	
 	public static void main(String[] args) {
-		
+		//teste de commit no linux
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
