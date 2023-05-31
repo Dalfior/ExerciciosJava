@@ -1,6 +1,5 @@
 package ExerciciosEstruturaCondicional;
 
-import java.security.DrbgParameters.NextBytes;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -12,7 +11,7 @@ public class ProblemaLanchonete {
 		Scanner sc = new Scanner(System.in);
 		
 		int produto, quantidade;
-		double valor = 0, total;
+		double valor = 0;
 		
 		System.out.println("Codigo do produto comprado: ");
 		produto = sc.nextInt();
