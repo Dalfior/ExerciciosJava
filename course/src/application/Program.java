@@ -1,32 +1,38 @@
-package ProgramacaoOrientadaObjetos;
+package application;
 
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ExemploAreaDoTriangulo {
+import entities.Triangle;
+
+public class Program {
 
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double x1, x2, x3, y1, y2, y3, areaX, areaY, pX, pY;
+		double areaX, areaY, pX, pY;
+		
+		Triangle x, y;
+		x = new Triangle();
+		y = new Triangle();
 		
 		System.out.println("Entere the measures of triangle X: ");
-		x1 = sc.nextDouble();
-		x2 = sc.nextDouble();
-		x3 = sc.nextDouble();
+		x.a = sc.nextDouble();
+		x.b = sc.nextDouble();
+		x.c = sc.nextDouble();
 		
 		System.out.println("Entere the measures of triangle Y: ");
-		y1 = sc.nextDouble();
-		y2 = sc.nextDouble();
-		y3 = sc.nextDouble();
+		y.a = sc.nextDouble();
+		y.b = sc.nextDouble();
+		y.c = sc.nextDouble();
 		
-		pX = (x1 + x2 + x3) / 2;
-		pY = (y1 + y2 + y3) / 2;
+		pX = (x.a + x.b + x.c) / 2;
+		pY = (y.a + y.b + y.c) / 2;
 		
-		areaX = Math.sqrt(pX * (pX - x1) * (pX - x2) * (pX - x3));
-		areaY = Math.sqrt(pY * (pY - y1) * (pY - y2) * (pY - y3));
+		areaX = Math.sqrt(pX * (pX - x.a) * (pX - x.b) * (pX - x.c));
+		areaY = Math.sqrt(pY * (pY - y.a) * (pY - y.b) * (pY - y.c));
 		
 		System.out.printf("Triangle X area: %.4f%n", areaX);
 		System.out.printf("Triangle Y area: %.4f%n", areaY);
