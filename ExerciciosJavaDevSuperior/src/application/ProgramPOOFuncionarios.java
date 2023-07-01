@@ -15,7 +15,7 @@ public class ProgramPOOFuncionarios {
 		Employee employee = new Employee();
 
 		System.out.print("Nome: ");
-		employee.name = sc.nextLine();
+		employee.name = sc.next();
 		System.out.print("Salário bruto: ");
 		employee.grossSalary = sc.nextDouble();
 		System.out.print("Imposto: ");
@@ -23,7 +23,7 @@ public class ProgramPOOFuncionarios {
 
 		System.out.println("Funcionário: " + employee.name + ", $ " + employee.netSalary());
 		
-		System.out.print("Qual o percentual para aumentar o salário? ");
+		System.out.print("Qual o percentual para aumentar o salário?");
 		employee.percentage = sc.nextDouble();
 		
 		System.out.println("Funcionário: " + employee.name + ", $ " + employee.increaseSalary());
